@@ -38,19 +38,24 @@
       <div class="flex items-center gap-10 mr-5">
         <!-- Heart with image -->
 
-        <div class="flex items-center gap-2">
+        <div class="flex items-center gap-2 bg-green-100 rounded-4xl btn">
           <img src="assets/heart.png" alt="coin" class="w-6 h-6" />
           <span id="heartCount" class="font-bold">0</span>
         </div>
 
         <!-- Coin (example with text or image) -->
 
-        <div class="flex items-center gap-2">
+        <div class="flex items-center gap-2 bg-green-100 rounded-4xl btn">
           <img src="assets/coin.png" alt="heart" class="w-6 h-6" />
           <span class="font-bold" id="coin">100</span>
         </div>
         <!-- Copy Button -->
-        <button class="btn rounded-4xl bg-green-600 text-white">2 Copy</button>
+        <button
+          id="copy-btn-main"
+          class="btn rounded-4xl bg-green-600 text-white"
+        >
+          0 Copy
+        </button>
       </div>
     </div>
 
@@ -95,12 +100,12 @@
                 <p class="text-sm mt-1">Emergency</p>
               </div>
               <div>
-                <p class="text-2xl font-bold mt-2">999</p>
+                <p class="text-2xl font-bold mt-2 hotline-number">999</p>
                 <p class="text-sm mt-1">Emergency number</p>
               </div>
             </div>
             <div class="flex justify-between mt-4 shadow-sm w-full gap-2">
-              <button id="copy-btn" class="btn flex-1">Copy</button>
+              <button id="" class="btn flex-1 copy-btn">Copy</button>
               <button
                 id="call-btn"
                 class="bg-[rgba(0,166,62,1)] btn rounded-xl flex-1"
@@ -126,12 +131,12 @@
                 <p class="text-sm mt-1">Police</p>
               </div>
               <div>
-                <p class="text-2xl font-bold mt-2">999</p>
+                <p class="text-2xl font-bold mt-2 hotline-number">999</p>
                 <p class="text-sm mt-1">Police number</p>
               </div>
             </div>
             <div class="flex justify-between mt-4 shadow-sm w-full gap-2">
-              <button id="copy-btn" class="btn flex-1">Copy</button>
+              <button class="btn flex-1 copy-btn">Copy</button>
               <button
                 id="call-btn"
                 class="bg-[rgba(0,166,62,1)] btn rounded-xl flex-1"
@@ -157,12 +162,12 @@
                 <p class="text-sm mt-1">Fire</p>
               </div>
               <div>
-                <p class="text-2xl font-bold mt-2">998</p>
+                <p class="text-2xl font-bold mt-2 hotline-number">998</p>
                 <p class="text-sm mt-1">Fire service number</p>
               </div>
             </div>
             <div class="flex justify-between mt-4 shadow-sm w-full gap-2">
-              <button id="copy-btn" class="btn flex-1">Copy</button>
+              <button class="btn flex-1 copy-btn">Copy</button>
               <button
                 id="call-btn"
                 class="bg-[rgba(0,166,62,1)] btn rounded-xl flex-1"
@@ -189,12 +194,12 @@
               </div>
               <br />
               <div>
-                <p class="text-2xl font-bold mt-2">999</p>
+                <p class="text-2xl font-bold mt-2 hotline-number">16263</p>
                 <p class="text-sm mt-1">Ambulance</p>
               </div>
             </div>
             <div class="flex justify-between mt-4 shadow-sm w-full gap-2">
-              <button id="copy-btn" class="btn flex-1">Copy</button>
+              <button class="btn flex-1 copy-btn">Copy</button>
               <button
                 id="call-btn"
                 class="bg-[rgba(0,166,62,1)] btn rounded-xl flex-1"
@@ -221,12 +226,12 @@
               </div>
               <br />
               <div>
-                <p class="text-2xl font-bold mt-2">999</p>
+                <p class="text-2xl font-bold mt-2 hotline-number">965</p>
                 <p class="text-sm mt-1">Brac Number</p>
               </div>
             </div>
             <div class="flex justify-between mt-4 shadow-sm w-full gap-2">
-              <button id="copy-btn" class="btn flex-1">Copy</button>
+              <button class="btn flex-1 copy-btn">Copy</button>
               <button
                 id="call-btn"
                 class="bg-[rgba(0,166,62,1)] btn rounded-xl flex-1"
@@ -258,12 +263,12 @@
                 <p class="text-sm mt-1">Railway</p>
               </div>
               <div>
-                <p class="text-2xl font-bold mt-2">999</p>
+                <p class="text-2xl font-bold mt-2 hotline-number">995</p>
                 <p class="text-sm mt-1">Railway number</p>
               </div>
             </div>
             <div class="flex justify-between mt-4 shadow-sm w-full gap-2">
-              <button id="copy-btn" class="btn flex-1">Copy</button>
+              <button class="btn flex-1 copy-btn">Copy</button>
               <button
                 id="call-btn"
                 class="bg-[rgba(0,166,62,1)] btn rounded-xl flex-1"
@@ -293,12 +298,12 @@
                 <p class="text-sm mt-1">Helpline</p>
               </div>
               <div>
-                <p class="text-2xl font-bold mt-2">109</p>
+                <p class="text-2xl font-bold mt-2 hotline-number">109</p>
                 <p class="text-sm mt-1">Women & Child Helpline</p>
               </div>
             </div>
             <div class="flex justify-between mt-4 shadow-sm w-full gap-2">
-              <button id="copy-btn" class="btn flex-1">Copy</button>
+              <button class="btn flex-1 copy-btn">Copy</button>
               <button
                 id="call-btn"
                 class="bg-[rgba(0,166,62,1)] btn rounded-xl flex-1"
@@ -329,12 +334,12 @@
               </div>
               <br />
               <div>
-                <p class="text-2xl font-bold mt-2">16263</p>
+                <p class="text-2xl font-bold mt-2 hotline-number">16263</p>
                 <p class="text-sm mt-1">Shastho Batayon</p>
               </div>
             </div>
             <div class="flex justify-between mt-4 shadow-sm w-full gap-2">
-              <button id="copy-btn" class="btn flex-1">Copy</button>
+              <button class="btn flex-1 copy-btn">Copy</button>
               <button
                 id="call-btn"
                 class="bg-[rgba(0,166,62,1)] btn rounded-xl flex-1"
@@ -365,12 +370,12 @@
               </div>
               <br />
               <div>
-                <p class="text-2xl font-bold mt-2">333</p>
+                <p class="text-2xl font-bold mt-2 hotline-number">333</p>
                 <p class="text-sm mt-1">Govt Info Service</p>
               </div>
             </div>
             <div class="flex justify-between mt-4 shadow-sm w-full gap-2">
-              <button id="copy-btn" class="btn flex-1">Copy</button>
+              <button class="btn flex-1 copy-btn">Copy</button>
               <button
                 id="call-btn"
                 class="bg-[rgba(0,166,62,1)] btn rounded-xl flex-1"
@@ -396,18 +401,15 @@
             </button>
           </div>
           <ul class="space-y-3 text-md">
-            <li class="flex justify-between">
-              <span>Fire Service Number</span>
-              <span class="text-xs text-gray-500">11:36 AM</span>
-            </li>
-            <li class="flex justify-between">
-              <span>National Emergency</span>
-              <span class="text-xs text-gray-500">11:35 AM</span>
-            </li>
-            <li class="flex justify-between">
-              <span>Railway Helpline</span>
-              <span class="text-xs text-gray-500">11:34 AM</span>
-            </li>
+            <!-- <li
+              class="flex justify-between items-center bg-gray-100 rounded-lg p-3 shadow-sm"
+            >
+              <div class="flex flex-col">
+                <span>Fire Service Number</span>
+                <span class="text-gray-800 text-sm">999</span>
+              </div>
+              <div class="text-gray-800 text-xs">11:36:58 AM</div>
+            </li> -->
           </ul>
         </div>
       </div>
