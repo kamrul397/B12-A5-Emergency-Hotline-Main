@@ -13,9 +13,10 @@ hearts.forEach((heartIcon) => {
 // Call button functionalities
 let coins = 100;
 const coinEl = document.getElementById("coin");
-const callButtons = document.querySelectorAll("#call-btn");
-const historyList = document.querySelector(".col-span-2 ul");
-const clearBtn = document.querySelector(".col-span-2 button");
+const callButtons = document.querySelectorAll(".call-btn");
+const historyList = document.querySelector(".lg\\:col-span-2 ul");
+
+const clearBtn = document.querySelector(".lg\\:col-span-2 button");
 
 callButtons.forEach((button) => {
   button.addEventListener("click", function () {
